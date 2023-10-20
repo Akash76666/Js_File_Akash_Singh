@@ -52,6 +52,20 @@ let BooleanIn=Boolean(isLoggedIn)
 console.log(typeof BooleanIn)
 console.log(BooleanIn);
 
-// 1 => true
+// 1 => true 0 => false
 // "" => false
 // "Akash" => true
+
+let num=565
+let StringIn=String(num)
+console.log(typeof StringIn)
+console.log(StringIn);
+
+let num1=null
+let StringValue=String(num1)
+console.log(typeof StringValue)
+console.log(StringValue)
+
+// 567 => 567 but in String Format
+// null => null
+//notdefined => notdefined
