@@ -21,7 +21,7 @@ let obj1={
 let obj2=obj1
 obj2.a=20
 obj2.b="Bheem"
-console.log("Reference type value: ",obj1.a)
-console.log("Reference type value: ",obj1.b)
-console.log(obj2.a)
-console.log(obj2.b)
+console.log("Reference type value: ",obj1.a) // Reference type value:  20
+console.log("Reference type value: ",obj1.b) // Reference type value:  Bheem
+console.log(obj2.a) //20
+console.log(obj2.b) //Bheem
