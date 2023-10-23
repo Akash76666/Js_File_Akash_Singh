@@ -33,8 +33,10 @@ const myFunction=function a(para1){
 }
 myFunction("Argument in function");
 
+let v=null
 console.log(typeof a); //number
 console.log(typeof obj); //object
 console.log(typeof myFunction); //function
 console.log(str1); //[ 'Akash', 'Akhilesh', 'Vivek' ]
 console.log(i); //Symbol(10)
+console.log(typeof v); // object
