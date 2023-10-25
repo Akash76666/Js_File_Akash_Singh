@@ -42,3 +42,13 @@ console.log(strcopy)
 
 const strsplit=str3.split(' ',2)
 console.log(strsplit) //It gives two split words as Split value ['All','the']
+
+const str4="Blink Prorperty in Css"
+const strCopy=str4.blink();
+console.log(strCopy)
+
+console.log(str4.bold())
+
+console.log(`The CharcodeAt method in String: ${str4.codePointAt("3")}`)
+const strColor=str4.fontcolor("red")
+console.log(`The fontcolor in String: ${strColor}`)
