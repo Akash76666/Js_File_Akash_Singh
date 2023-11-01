@@ -89,8 +89,11 @@ console.log(newArray1)
 
 const single_Array=[1,2,3,4,[3,4,5],5,6,7,[6,7,[5,7]]]
 const con_array=single_Array.flat(1) //conveted into single array to depth One
+
 const conArray2=single_Array.flat(2) ////conveted into single array to depth Two
+
 console.log(single_Array)
+
 console.log(con_array)// [ 1, 2, 3, 4, 3, 4, 5, 5, 6, 7, 6, 7, [ 5, 7 ] ]
 console.log(conArray2)// [1, 2, 3, 4, 3, 4,5, 5, 6, 7, 6, 7,5, 7]
 
@@ -135,3 +138,58 @@ console.log(Object.values(obj1))/* It print all value in array format
 
 console.log(Object.entries(obj1)) /* [[ 'name', 'Akash' ],[ 'Roll_no', 13 ],
     [ 'Email', 'Akash@gmail.com' ],[ 'sir_name', 'Singh' ]] */
+
+const key=Symbol("mykey")
+
+const newobject={
+    name:"Avinash",
+    [key]:"Akash",
+    roll_no:10
+}
+
+console.log(newobject)
+
+newobject.city=function(){
+    console.log("Hello Js")
+}
+
+console.log(newobject)
+console.log(newobject.city())
+newobject.greeting=()=>{
+    console.log(`the name is: ${this.name} and Roll_no is:${this["roll_no"]}`)
+}
+console.log(newobject.greeting())
+console.log(newobject)
+
+const User={
+    Reg_id:121,
+    fullName:{
+          First_Name:"Akash",
+          Last_name:"Singh"
+    }
+}
+
+console.log(User) // { Reg_id: 121, fullName: { First_Name: 'Akash', Last_name: 'Singh' } }
+console.log(User.fullName.First_Name) // Akash
+
+const User1={
+    name:"Akku",
+    city:"Mumbai"
+}
+
+const User2={
+    Id:1,
+    Lastname:"Singh"
+}
+
+const user3={User1,User2}
+console.log(user3)
+
+const user4={...User1,...User2} //Merge array as much you want
+console.log(user4) // { name: 'Akku', city: 'Mumbai', Id: 1, Lastname: 'Singh' }
+console.log(Object.keys(user4))
+
+const user5=Object.assign({},User1,User2)// //Merge array as much you want
+console.log(user5)// { name: 'Akku', city: 'Mumbai', Id: 1, Lastname: 'Singh' }
+
+console.log(User1.hasOwnProperty("name")) //True
