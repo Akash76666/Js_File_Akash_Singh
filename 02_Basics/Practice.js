@@ -101,3 +101,37 @@ console.log(Array.of(a,b,c))// [ 10, 20, 'Akash' ] Convert all value to array
 
 const d=Array.of(a,b,c)
 console.log(d) // [ 10, 20, 'Akash' ]
+
+//    ++++++++++++++++ Objects +++++++++++++++++++++++++
+let obj1={
+    name:"Akash",
+    Roll_no:13,
+    Email:"Akash@gmail.com"
+}
+
+let obj2={
+    Reg_id:1,
+    City:"Mumabi",
+    State:"uttarpradesh",
+}
+
+console.log(obj1.Roll_no)
+
+console.log(obj2.State)
+
+console.log(obj1["Email"]) // You can also access like this
+
+const {Email}=obj1
+console.log(Email) // Another methos to access the value under object
+
+obj1.sir_name="Singh"
+console.log(obj1)
+
+console.log(Object.keys(obj1)) /* It print all keys in array format 
+[ 'name', 'Roll_no', 'Email', 'sir_name' ] */
+
+console.log(Object.values(obj1))/* It print all value in array format
+[ 'Akash', 13, 'Akash@gmail.com', 'Singh' ] */
+
+console.log(Object.entries(obj1)) /* [[ 'name', 'Akash' ],[ 'Roll_no', 13 ],
+    [ 'Email', 'Akash@gmail.com' ],[ 'sir_name', 'Singh' ]] */
