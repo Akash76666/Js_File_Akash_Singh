@@ -65,10 +65,17 @@ if(balance < 500){
 
 const userLoggedIn=true
 const debitcard=true
+const userLogedinfromgoogle=true
+const userLogedInfromEmail=false
 /* Where we use && means all the value will be true then it goes under the 
 condition and execute the statement if the any value will be false it do not execute 
 the statement */
 
 if(userLoggedIn && debitcard){
     console.log("Allow user to Buy product")
+}
+
+// Here if any one condition is true the code inside the if block will be executed
+if(userLogedInfromEmail || userLogedinfromgoogle){
+    console.log("User Logged")
 }
