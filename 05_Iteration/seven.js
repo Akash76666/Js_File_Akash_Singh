@@ -19,3 +19,8 @@ const numbers=myNumber.map((values)=>values*10)// [10, 20, 30, 40,50, 60, 70, 80
               .map((values)=>values+1)// [11, 21, 31, 41,51, 61, 71, 81]
               .filter((values)=> values>50) // [ 51, 61, 71, 81 ]
 console.log(numbers)
+
+const newArray=[10,20,30,40,50]
+const chainMap=newArray.map((Items)=>Items*10).map((Items)=>Items+2)
+                     .filter((Items)=>(Items>400))
+console.log(chainMap) // [ 402, 502 ]

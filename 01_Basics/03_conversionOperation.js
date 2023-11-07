@@ -17,7 +17,7 @@ let m="32aa"
 let valueInNum=Number(m) /* If we try to change semi-String or alpha-numeric number it
 print NaN in console */
 console.log(typeof valueInNum)
-console.log(valueInNum)
+console.log("ss: "+valueInNum)
 
 let n=null
 let valueInNumeric=Number(n) /* If we try to change null value it
