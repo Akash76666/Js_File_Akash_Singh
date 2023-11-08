@@ -57,3 +57,9 @@ const min=10
 const max=20
 console.log(Math.floor((Math.random())*(max-min+1)+min)) /* If you want to find the 
 range between min value and max value */
+
+
+
+const array1 = [2, 3, 1];
+
+console.log(Math.min(...array1));

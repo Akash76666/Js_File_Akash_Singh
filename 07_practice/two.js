@@ -1,0 +1,13 @@
+const mydate=new Date()
+console.log(mydate.getDate())
+console.log(mydate.getMonth())
+console.log(mydate.getUTCDate())
+console.log(mydate.toString())
+console.log(mydate.toDateString())
+
+const newDate=new Date(2000,1,23,16,5,7)
+console.log(newDate)
+console.log(newDate.getHours())
+console.log(newDate.toLocaleString())
+console.log(newDate.toDateString())
+console.log(newDate.toLocaleString('en-In',{timeZone:'UTC'}))
