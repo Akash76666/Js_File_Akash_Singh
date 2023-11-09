@@ -20,7 +20,7 @@ const numbers=[]
 codingFile1.forEach((num)=>{
    if(num>4){
       numbers.push(num)
-    }
+    } 
 })
 console.log(numbers) // [ 5, 6, 7, 8 ]
 
